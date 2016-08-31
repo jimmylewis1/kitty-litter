@@ -1,1 +1,1 @@
-var app = angular.module('kittyLitter', [])
+var app = angular.module('kittyLitter', ['ngMaterial'])
