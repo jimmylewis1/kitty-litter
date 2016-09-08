@@ -8,24 +8,64 @@
   <title>Sandbox | Kitty Litter</title>
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <!--Angular Material Stylesheet-->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-controller="mainCtrl">
-<md-content>
+
+<div class="nav-mobile">
+  <md-menu>
+    <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+      <img class="menu-button-img" src="img/icon-menu.png">
+      <!--<md-icon md-menu-origin="" md-svg-icon="call:business"></md-icon>-->
+    </md-button>
+    <md-menu-content width="4">
+      <md-menu-item>
+        <md-button ng-click="ctrl.announceClick($index)">
+          <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+          <img class="home-button-img" src="/img/icon-globe.png">
+          Home
+        </md-button>
+      </md-menu-item>
+      <md-menu-item>
+        <md-button ng-click="ctrl.announceClick($index)">
+          <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+          <img class="about-button-img" src="/img/icon-about.png">
+          About
+        </md-button>
+      </md-menu-item>
+      <md-menu-item>
+        <md-button ng-click="ctrl.announceClick($index)">
+          <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+          <img class="web-dev-button-img" src="/img/icon-desktop.png">
+          Web-Dev
+        </md-button>
+      </md-menu-item>
+      <md-menu-item>
+        <md-button ng-click="ctrl.announceClick($index)">
+          <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+          <img class="work-history-button-img" src="/img/icon-paper.png">
+          Work-History
+        </md-button>
+      </md-menu-item>
+    </md-menu-content>
+  </md-menu>
+</div>
+
 <h1>Sand Box</h1>
 
 <h5>Click on the "+1" button to add it as a preface.</h5>
 <button type="button" id="button">+1</button>
 <input type="text" id="text" placeholder="Enter DID..."/>
-<md-button class="md-raised md-primary">Submit</md-button>
 
-</md-content>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.js"></script>
 <script src="js/app.js"></script>
 <script src="js/mainCtrl.js"></script>
 <script src="js/mainService.js"></script>

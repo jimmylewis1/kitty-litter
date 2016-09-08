@@ -1,0 +1,13 @@
+.menu-button-img, .home-button-img,
+.about-button-img, .web-dev-button-img,
+.work-history-button-img {
+  height: 20px;
+}
+
+md-menu-item > button {
+  display: flex !important;
+}
+
+md-menu-item > button > span {
+  margin-left: 10px;
+}
